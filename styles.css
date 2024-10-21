@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url('./images/space.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: orbit 36.5s linear infinite;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+ 
+}
+
+.sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 100px;
+  background-color: #ffcc00;
+  box-shadow: 0 0 3px #fff;
+  border-radius: 50%;
+
+}
+
+.earth {
+  width: 80px;
+  height: 80px;
+  background-image: url('./images/earth.png');
+  background-size: contain;
+  
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/moon.png');
+  background-size: contain;
+  
+}
+
+@keyframes orbit {
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
