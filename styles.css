@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  background-image: url('./images/space.jpg');
+  background-image: url('./images/space.webp');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ body {
 .earth {
   width: 80px;
   height: 80px;
-  background-image: url('./images/earth.png');
+  background-image: url('./images/earth.webp');
   background-size: contain;
   animation: orbit 36.5s linear infinite;
   margin: 20rem;
@@ -40,7 +40,7 @@ body {
 .moon {
   width: 20px;
   height: 20px;
-  background-image: url('./images/moon.png');
+  background-image: url('./images/moon.webp');
   background-size: contain;
   margin: 6rem;
 }
