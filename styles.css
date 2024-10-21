@@ -15,7 +15,6 @@ body {
   width: 400px;
   height: 400px;
   position: relative;
- 
 }
 
 .sun {
@@ -27,7 +26,6 @@ body {
   background-color: #ffcc00;
   box-shadow: 0 0 3px #fff;
   border-radius: 50%;
-
 }
 
 .earth {
@@ -35,7 +33,8 @@ body {
   height: 80px;
   background-image: url('./images/earth.png');
   background-size: contain;
-  
+  animation: orbit 36.5s linear infinite;
+  margin: 20rem;
 }
 
 .moon {
@@ -43,12 +42,40 @@ body {
   height: 20px;
   background-image: url('./images/moon.png');
   background-size: contain;
-  
+  margin: 6rem;
 }
 
 @keyframes orbit {
-  to{
+  to {
     transform: rotate(360deg);
   }
-  
+}
+
+@media (max-width: 50em) {
+  body {
+    width: 100%;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+  }
+
+  .earth {
+    width: 40px;
+    height: 40px;
+    margin: 10rem;
+  }
+
+  .moon {
+    width: 10px;
+    height: 10px;
+    margin: 3rem;
+  }
 }
